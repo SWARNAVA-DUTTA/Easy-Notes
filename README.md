@@ -1,5 +1,5 @@
 # Easy Notes
- This is a python GUI application where you can save,edit or delete your notes from the database using MySQL as backend
+
 
 ![image](https://user-images.githubusercontent.com/46235752/156226771-a9207255-9636-43ae-8ebe-7b7c1cb2c716.png)
 <br/><br/><br/>
