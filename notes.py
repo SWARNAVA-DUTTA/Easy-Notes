@@ -1,10 +1,7 @@
-import os
 from tkinter import *
 import tkinter as tk
 from tkinter import messagebox
 import mysql.connector
-from tkinter.messagebox import *
-from tkinter.filedialog import *
 
 window = tk.Tk()
 window.title("Easy Notes")
@@ -15,6 +12,7 @@ file = None
 
 def onselect(evt):
     global selected_index
+
     # Note here that Tkinter passes an event object to onselect()
     w = evt.widget
     index = int(w.curselection()[0])
@@ -273,7 +271,7 @@ def delete_note():
     result = tk.messagebox.askquestion("Delete", "Are you sure you want to delete?", icon='warning')
 
     if result == 'yes':
-        
+
         # remove notes from db
         id = ids[selected_index]
         db_delete_note(conn, id)
